@@ -1,0 +1,42 @@
+# Syrian Voice Agent Requirements
+# Charco Chicken Restaurant Voice Assistant
+
+# Core LiveKit and Agent Framework
+livekit-agents>=0.9.0
+livekit-api>=0.17.0
+livekit-protocol>=0.12.0
+
+# AI Providers (Free/Low-cost tiers)
+livekit-plugins-google>=0.9.0          # Google Speech STT
+livekit-plugins-openai>=0.9.0          # GPT-4-mini LLM
+livekit-plugins-elevenlabs>=0.9.0      # ElevenLabs TTS
+livekit-plugins-silero>=0.9.0          # Silero VAD (Voice Activity Detection)
+
+# Backend API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+httpx>=0.25.0
+
+# Testing Interface
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+aiofiles>=23.2.1
+python-multipart>=0.0.6
+
+# Optional: For enhanced Arabic processing
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
+
+# Optional: For audio file handling in testing
+librosa>=0.10.1
+soundfile>=0.12.1
+pydub>=0.25.1
+
+# Development and debugging
+logging>=0.4.9.6
+asyncio-mqtt>=0.16.1  # If needed for IoT integration
